@@ -1,0 +1,147 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-dialog-scrollable .modal-content {
+  position: fixed;
+  height: 650px;
+  border: 5px orange solid;
+  border-radius: 12px;
+}
+
+.modal-backdrop {
+  z-index: -1;
+}
+.line_parent {
+  position: relative;
+}
+.line_adj {
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  left: 25%;
+  top: 29%;
+}
+
+.line_adj2 {
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  right: 68%;
+  top: 29%;
+}
+.line_adj3 {
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  right: 56.75%;
+}
+.loader {
+  display: block;
+  z-index: 99;
+  position: absolute;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  top: 50%;
+  background-color: black;
+  animation: loader-inner 2s infinite ease-in;
+}
+.mybuttons {
+  cursor: pointer;
+}
+.page_content {
+  position: fixed;
+  align-items: center;
+}
+
+.scale-page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 60%;
+  -ms-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  display: none;
+}
+
+.middle {
+  background-color: white;
+  border: 5px orange solid;
+  border-radius: 12px;
+  position: absolute;
+  height: 620px;
+  top: -10px;
+  left: -1px;
+}
+
+.footer {
+  background-color: lightblue;
+  padding: 20px;
+}
+.options {
+  border: 2.5px rgb(47, 180, 180) solid;
+  background-color: white;
+  padding: 20px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 4px 2px;
+  border-radius: 18px;
+  cursor: pointer;
+}
+.options:focus {
+  background-color: rgb(47, 180, 180);
+}
+
+.mid-section {
+  background-color: rgb(47, 180, 180);
+  height: 600px;
+  position: relative;
+}
+.correct_1,
+.wrong_1 {
+  position: absolute;
+  left: 173px;
+  top: 24px;
+}
+.correct_2,
+.wrong_2 {
+  position: absolute;
+
+  left: 173px;
+  top: 24px;
+}
+.correct_3,
+.wrong_3 {
+  position: absolute;
+
+  left: 459px;
+  top: 24px;
+}
+#closeIcon {
+  position: absolute;
+}
+
+@media screen and (max-width: 770px) {
+  .q_picture {
+    width: 100%;
+  }
+}

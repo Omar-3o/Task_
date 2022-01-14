@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style/bootstrap.min.css" />
+    <link rel="stylesheet" href="./Style/style.css" />
+  </head>
+  <body>
+    <!-- loader -->
+    <div class="wrapper">
+      <div class="loader">
+        <img class="loader-inner" src="./Assets/Preloader_2.gif" alt="" />
+      </div>
+    </div>
+    <!-- start of my page -->
+    <div class="container scale-page my-5">
+      <div class="page-content">
+        <!-- page header -->
+        <div class="header d-flex justify-content-between my-5">
+          <h1>Complete The Words</h1>
+          <div>
+            <!-- Button trigger modal -->
+
+            <img
+              class="mybuttons"
+              data-toggle="modal"
+              data-target="#picturesModal"
+              src="./Assets/Pictures.png"
+              alt=""
+            />
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="picturesModal"
+              tabindex="-1"
+              aria-labelledby="morePictures"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content popup_border">
+                  <div class="d-flex justify-content-end p-3">
+                    <img
+                      type="button"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                      src="./Assets/close.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="modal-body">
+                    <img class="p-1" src="./Assets/dummy.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Button trigger modal -->
+
+            <img
+              data-toggle="modal"
+              data-target="#helpModal"
+              src="./Assets/Help_icon.png"
+              alt=""
+            />
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="helpModal"
+              tabindex="-1"
+              aria-labelledby="dummyText"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content popup_border">
+                  <div class="d-flex justify-content-between p-3">
+                    <h5 class="modal-title" id="dummyText">Help</h5>
+
+                    <img
+                      type="button"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                      src="./Assets/close.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="modal-body">
+                    <span>dummy text</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mid-section">
+          <div class="middle mx-2">
+            <div class="mt-5">
+              <div class="answers my-5 d-flex justify-content-center">
+                <button class="options mx-3" id="firstAnswer">a</button>
+                <button class="options mx-3" id="secAnswer">p</button>
+              </div>
+              <div class="row" style="text-align: center">
+                <div class="col-6 line_parent">
+                  <img
+                    class="wrong_1 wrongAns d-none"
+                    src="./Assets/crossMark-small.png"
+                    alt="cross Mark picture"
+                  />
+                  <img
+                    class="correct_1 correctAns d-none"
+                    src="./Assets/tikMark-small.png"
+                    alt="correct mark picture"
+                  />
+                  <h1 style="display: inline-block">
+                    1 t<span id="question1" class="line_adj"> </span>
+                    <span>__</span> p
+                  </h1>
+                  <img class="q_picture" src="./Assets/Tap.png" alt="" />
+                </div>
+
+                <div class="col-6 line_parent">
+                  <img
+                    class="wrong_2 wrongAns d-none"
+                    src="./Assets/crossMark-small.png"
+                    alt="cross Mark picture"
+                  />
+                  <img
+                    class="correct_2 correctAns d-none"
+                    src="./Assets/tikMark-small.png"
+                    alt="correct mark picture"
+                  />
+                  <h1 style="display: inline-block">
+                    2 <span id="question2" class="line_adj2"> </span
+                    ><span>__</span>at
+                  </h1>
+                  <img class="q_picture" src="./Assets/Pat.png" alt="" />
+                </div>
+
+                <div class="col-12 line_parent">
+                  <img
+                    class="wrong_3 wrongAns d-none"
+                    src="./Assets/crossMark-small.png"
+                    alt="cross Mark picture"
+                  />
+                  <img
+                    class="correct_3 correctAns d-none"
+                    src="./Assets/tikMark-small.png"
+                    alt="correct mark picture"
+                  />
+                  <h1 style="display: inline-block">
+                    3 m<span id="question3" class="line_adj3"> </span
+                    ><span>__</span>p
+                  </h1>
+                  <img src="./Assets/Map.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="footer row">
+            <div class="col-8">
+              <img
+                id="replay"
+                class="mybuttons"
+                src="./Assets/Replay_icon.png"
+                alt=""
+              />
+            </div>
+            <div class="col-4">
+              <img
+                id="showAnswers"
+                class="mybuttons"
+                src="./Assets/ShowAns_icon.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./Script/underscore-esm-min.js"></script>
+    <script src="./Script/popper.min.js"></script>
+    <script src="./Script/jquery-3.6.0.min.js"></script>
+    <script src="./Script/bootstrap.min.js"></script>
+    <script src="./Script/script.js"></script>
+  </body>
+</html>
